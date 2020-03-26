@@ -1,6 +1,6 @@
 # Drone App
 
-Please visit below mentioned link for [Demo](https://jaydev25.github.io/drone/).
+I have made it easy for you, visit [Demo](https://jaydev25.github.io/drone/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
