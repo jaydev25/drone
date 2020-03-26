@@ -1,7 +1,6 @@
 # Drone App
 
-Please visit below mentioned link for [Demo](https://jaydev25.github.io/drone/)
-This source code is part of [Angular 8 Tutorial: How to Create an Angular Web App 
+Please visit below mentioned link for [Demo](https://jaydev25.github.io/drone/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
