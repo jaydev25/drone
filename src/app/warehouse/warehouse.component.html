@@ -1,0 +1,27 @@
+
+<mat-form-field>
+  <mat-label>Enter Value for N</mat-label>
+  <input [(ngModel)]="n" matInput OnlyNumber="true">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Enter Value for M</mat-label>
+  <input [(ngModel)]="m" matInput OnlyNumber="true">
+</mat-form-field>
+<button mat-button (click)="createWarehouse($event)">Create Warehouse</button><br>
+Direction:
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle value="bold" checked="true" (click)="up()">Up</mat-button-toggle>
+  <mat-button-toggle value="italic" (click)="down()">Down</mat-button-toggle>
+</mat-button-toggle-group>
+<div>
+  <ul style="width:6%; float:left; list-style-type:none;" *ngFor="let row of grids; let i = index">
+     <li *ngFor="let box of row; let j = index">
+       <mat-card mat-button (click)="setPoint(i, j)" class="box">
+         <mat-icon *ngIf="box.text == '^'" class="box-align-icon">
+           {{box.arrow}}
+         </mat-icon>
+         <div *ngIf="box.text == 'S' || box.text == 'E'" class="box-align">{{box.text}}</div>
+       </mat-card>
+     </li>
+  </ul>
+</div>
